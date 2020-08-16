@@ -1,17 +1,47 @@
+.container {
+  display: flex;
+}
+
 .grid {
-  width: 200px;
-  height: 400px;
+  background-color: yellow;
   display: flex;
   flex-wrap: wrap;
-  background-color: yellow;
+  height: 400px;
+  width: 200px;
 }
 
 .grid div{
   height: 20px;
   width: 20px;
-  }
+}
 
-  .tetromino {
-    background-color: blue;
-  }
+.tetromino {
+  background-color: blue;
+}
 
+.mini-grid {
+  background-color: yellow;
+  display: flex;
+  flex-wrap: wrap;
+  height: 80px;
+  margin-left: 50px;
+  width: 80px;
+}
+
+.mini-grid div {
+  height: 20px;
+  width: 20px;
+}
+
+.Display {
+  background-color: blue;
+  display: flex;
+  flex-wrap: wrap;
+  height: 40px;
+  width: 350px;
+}
+
+.Display div {
+  height: 80px;
+  width: 100px;
+}
