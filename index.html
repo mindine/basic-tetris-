@@ -2,15 +2,27 @@
 <html lang="en" dir="ltr">
  <head>
    <meta charset="utf-8">
-   <script src="app.js" charset="utf-8"></script>
+   <script src="app.js" charset="utf-8">   </script>
    <link rel="stylesheet" href="style.css"></link>
    <title>Basic-Tetris</title>
  </head>
+
  <body>
+   <audio id="game-song" controls>
+     <source src="blessings.mp3" type="audio/mp3">
+   </audio>
+   <br>
+<button id="start-button">
+  Start/Pause
+</button>
 
-   <h3>Score:<span id="score">0</span></h3>
-   <button id="Start-button">Start/Pause</button>
+   <div class="Display">
+     <div><h3>Score:<span id="score">0</span></h3></div>
+     <div><h3>Lines:<span id="line-Count">0</span></h3></div>
+     <div><h3>Level:<span id="level">0</span></h3></div>
+  </div>
 
+  <div class="container">
    <div class="grid">
      <div></div>
      <div></div>
@@ -212,6 +224,48 @@
      <div></div>
      <div></div>
      <div></div>
+     <div class="taken"></div>
+     <div class="taken"></div>
+     <div class="taken"></div>
+     <div class="taken"></div>
+     <div class="taken"></div>
+     <div class="taken"></div>
+     <div class="taken"></div>
+     <div class="taken"></div>
+     <div class="taken"></div>
+     <div class="taken"></div>
    </div>
+   <div class="mini-grid">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+</div>
  </body>
+
+ <script>
+ const blessings = document.getElementById("game-song");
+
+ function play () {
+   blessings.play();
+ }
+
+ function pause () {
+   blessings.pause();
+ }
+ </script>
+
  </html>
